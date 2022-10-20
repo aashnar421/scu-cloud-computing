@@ -24,5 +24,4 @@ def get_meal():
     return render_template('index.html', meal_name=jsonData['name'], meal_price=jsonData['price'])
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80) #instead of hard coding 80 can do os.environ.get("CONSUMER_PORT")
-    #avoids hard coding.
+    app.run(host='0.0.0.0', port=80)

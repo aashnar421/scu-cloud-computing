@@ -70,6 +70,7 @@ allMeals = [
 def get_meal():
     random_meal = random.randint(0, len(allMeals)-1)
     return allMeals[random_meal]
+    # can also do return jsonify(). Might be able to avoid requests package altogether.
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
